@@ -3,7 +3,7 @@ from tkinter import *
 from tkinter import scrolledtext
 from open_ai import get_promt
 
-app = Tk()
+
 
 def main():
     text.delete('1.0',END)
@@ -14,7 +14,7 @@ def main():
         result = 'Ошибка!'
     finally:
         text.insert(END,result)
-
+app = Tk()
 
 app.title('Нейросеть)')
 app.geometry('500x900')
